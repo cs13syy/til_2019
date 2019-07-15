@@ -1,0 +1,12 @@
+presto string function : split_part
+
+description : 인덱싱을 통해 문자열을 잘라서 가져올 수 있다
+
+reference : https://prestodb.github.io/docs/current/functions/string.html
+
+example :
+select
+	split_part(cast(a.category_num as varchar),'',1) as "first",
+	split_part(cast(a.category_num as varchar),'',2) as "second",
+	split_part(cast(a.category_num as varchar),'',3) as third,
+	split_part(cast(a.category_num as varchar),'',4) as fourth...
