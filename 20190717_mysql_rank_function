@@ -1,0 +1,22 @@
+1. ROW_NUMBER()
+데이터 각 행에 번호를 붙여주는 기능. ROW 순서대로 번호가 부여된다.
+ex) 1,2,3,4,5
+
+2. RANK()
+데이터 각 행에 번호를 붙여주는데, 순위에 대한 순번으로 동률일 경우 같은 순번으로 처리한다.
+ex) 1,2,3,3,5
+
+3. DENSE_RANK()
+데이터 각 행에 번호를 붙여주는데, 동률 순번이 있을 경우 그 다음 순번으로 처리한다.
+ex) 1,2,3,3,4
+
+4. PERCENT_RANK
+RANK() 결과값의 백분율 순위를 계산해준다. 자신보다 아래에 전체의 몇 %가 있다는 의미다. 
+
+* PARTITION BY
+그룹 기준으로 순위를 계산하기 위해서는 PARTITION BY를 사용해야 한다.
+
+reference :
+1) https://gdbt.tistory.com/50
+2) https://yahwang.github.io/posts/48
+3) https://docs.aws.amazon.com/ko_kr/redshift/latest/dg/r_WF_PERCENT_RANK.html
